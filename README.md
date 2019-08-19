@@ -1,4 +1,4 @@
-# Solar+Storage Simulation Model for Net Billing
+# Solar Plus Storage Simulation Model for Net Billing
 Jin An, Yi
 
 ## 1. Introduction
