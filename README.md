@@ -1,13 +1,5 @@
----
-title: "Solar+Storage Simulation Model for Net Billing"
-author: "Jin An"
-output:
-  html_document:
-    keep_md: yes
----
-
-
-
+# Solar+Storage Simulation Model for Net Billing
+Jin An, Yi
 
 ## 1. Introduction
 In the U.S., for a non-utility scale solar+storage project, its main economic incentive comes from its rate structure at retail electricity market. This will not change too much before FERC Order 841 being implemented, which [requires a minimum size for participation in RTO/ISO wholesale markets not to exceed 100 kW](https://www.utilitydive.com/news/ferc-order-opens-floodgates-for-energy-storage-in-wholesale-markets/517326/), making smaller scale storage able to join the wholesale market.   
@@ -343,7 +335,7 @@ ggplot(data.frame(Hour = rep(1:24, times = 365), Day = rep(1:365, each = 24), Pr
     theme_bw()
 ```
 
-![](Model_files/figure-html/Visualizantion of solar production-1.png)<!-- -->
+![](Model_files/figure-html/Visualizantion of solar production-1.png)
   
 Visualiztion of load profile (daily profiles are the same for each reason):  
 
@@ -354,7 +346,7 @@ ggplot(data.frame(Hour = rep(1:24, times = 365), Day = rep(1:365, each = 24), Lo
     theme_bw()
 ```
 
-![](Model_files/figure-html/Visualiztion of load profile-1.png)<!-- -->
+![](Model_files/figure-html/Visualiztion of load profile-1.png)
   
 Notice that the shape of the two are close, and load is larger than production for most of the time, meaning there is not a lot of gap between load and PV production, and limited room for a storage system to do load shifting.  
 
