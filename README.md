@@ -326,7 +326,7 @@ ex_PV <- unlist(ex_PV, use.names = F)
 ex_load <- unlist(ex_load, use.names = F)
 ```
   
-Visualizantion of solar production:  
+Visualization of solar production:  
 
 ```r
 ggplot(data.frame(Hour = rep(1:24, times = 365), Day = rep(1:365, each = 24), Production = ex_PV)) +
@@ -335,9 +335,9 @@ ggplot(data.frame(Hour = rep(1:24, times = 365), Day = rep(1:365, each = 24), Pr
     theme_bw()
 ```
 
-![](Model_files/figure-html/Visualizantion of solar production-1.png)
+![](/Model_files/figure-html/Visualizantion of solar production-1.png)
   
-Visualiztion of load profile (daily profiles are the same for each reason):  
+Visualization of load profile (daily profiles are the same for each reason):  
 
 ```r
 ggplot(data.frame(Hour = rep(1:24, times = 365), Day = rep(1:365, each = 24), Load = ex_load)) +
@@ -346,7 +346,7 @@ ggplot(data.frame(Hour = rep(1:24, times = 365), Day = rep(1:365, each = 24), Lo
     theme_bw()
 ```
 
-![](Model_files/figure-html/Visualiztion of load profile-1.png)
+![](/Model_files/figure-html/Visualiztion of load profile-1.png)
   
 Notice that the shape of the two are close, and load is larger than production for most of the time, meaning there is not a lot of gap between load and PV production, and limited room for a storage system to do load shifting.  
 
@@ -620,74 +620,6 @@ transmute(dispatch_data, residue = Load  + (BatteryConsumption - PV - BatteryGen
 ## 98   0.000000e+00
 ## 99  -8.881784e-16
 ## 100  0.000000e+00
-## 101 -8.881784e-16
-## 102 -8.881784e-16
-## 103  0.000000e+00
-## 104  0.000000e+00
-## 105 -1.776357e-15
-## 106  0.000000e+00
-## 107 -1.776357e-15
-## 108  0.000000e+00
-## 109 -1.776357e-15
-## 110 -1.776357e-15
-## 111  0.000000e+00
-## 112 -1.776357e-15
-## 113  0.000000e+00
-## 114  0.000000e+00
-## 115  0.000000e+00
-## 116 -8.881784e-16
-## 117  0.000000e+00
-## 118 -8.881784e-16
-## 119 -8.881784e-16
-## 120 -4.440892e-16
-## 121 -4.440892e-16
-## 122  0.000000e+00
-## 123 -8.881784e-16
-## 124  0.000000e+00
-## 125 -8.881784e-16
-## 126 -8.881784e-16
-## 127  0.000000e+00
-## 128  0.000000e+00
-## 129 -1.776357e-15
-## 130  0.000000e+00
-## 131 -1.776357e-15
-## 132  0.000000e+00
-## 133 -1.776357e-15
-## 134 -1.776357e-15
-## 135  0.000000e+00
-## 136 -1.776357e-15
-## 137  0.000000e+00
-## 138  0.000000e+00
-## 139  0.000000e+00
-## 140 -8.881784e-16
-## 141  0.000000e+00
-## 142 -8.881784e-16
-## 143 -8.881784e-16
-## 144 -4.440892e-16
-## 145 -4.440892e-16
-## 146  0.000000e+00
-## 147 -8.881784e-16
-## 148  0.000000e+00
-## 149 -8.881784e-16
-## 150 -8.881784e-16
-## 151  0.000000e+00
-## 152  0.000000e+00
-## 153 -1.776357e-15
-## 154  0.000000e+00
-## 155 -1.776357e-15
-## 156  0.000000e+00
-## 157 -1.776357e-15
-## 158 -1.776357e-15
-## 159  0.000000e+00
-## 160 -1.776357e-15
-## 161  0.000000e+00
-## 162  0.000000e+00
-## 163  0.000000e+00
-## 164 -8.881784e-16
-## 165  0.000000e+00
-## 166 -8.881784e-16
-## 167 -8.881784e-16
-## 168 -4.440892e-16
 ```
 
 ```r
@@ -699,7 +631,7 @@ ggplot(dispatch_data) +
     theme_bw()
 ```
 
-![](Model_files/figure-html/visualize example 2 dispatch-1.png)<!-- -->
+![](/Model_files/figure-html/visualize example 2 dispatch-1.png)
 
 
 ### 4-3. Example 3: Considering Difference in Battery Size
